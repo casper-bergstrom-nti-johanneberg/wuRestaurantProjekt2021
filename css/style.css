@@ -1,0 +1,26 @@
+body{
+    margin: 0;
+}
+
+.main{
+    display: grid;
+    grid-template-columns: 1fr ;
+    grid-template-areas: 
+    "nav"
+    "picture";
+    grid-template-rows: 1fr 9fr 4fr;
+    height: 100vh;
+}
+
+.bild{
+    grid-area: "picture";
+}
+
+nav{
+    grid-area: "nav";
+}
+
+#fill{
+    grid-area: "fill";
+    background-color: black;
+}
