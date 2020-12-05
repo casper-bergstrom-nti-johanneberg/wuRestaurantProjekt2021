@@ -4,23 +4,155 @@ body{
 
 .main{
     display: grid;
-    grid-template-columns: 1fr ;
-    grid-template-areas: 
-    "nav"
-    "picture";
-    grid-template-rows: 1fr 9fr 4fr;
     height: 100vh;
+    width: 100%;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 9fr;
+    gap: 0px;
+    grid-template-areas:
+    'nav'
+    'ar';
+    background-image: url(/wuRestaurantProjekt2021/img/20201120_182348.jpg);
+    background-color: transparent;
+    background-size: cover;
+    opacity: 1;
+    visibility: visible;
+}
+
+.main-koncept{
+    display: grid;
+    height: 100vh;
+    width: 100%;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 9fr;
+    gap: 0px;
+    grid-template-areas:
+    'nav nav'
+    'ar as';
+    background-size: cover;
+    background-color: black;
+    opacity: 1;
+    visibility: visible;
+}
+
+.main-meny{
+    display: grid;
+    height: 100vh;
+    width: 100%;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 9fr;
+    gap: 0px;
+    grid-template-areas:
+    'nav'
+    'ar';
+    background-size: cover;
+    background-color: black;
+    opacity: 1;
+    visibility: visible;
 }
 
 .bild{
     grid-area: "picture";
 }
 
-nav{
-    grid-area: "nav";
+.fill{
+    grid-area: "fill";
 }
 
-#fill{
-    grid-area: "fill";
+#ar1 {
+    grid-area: ar;
+    color: white;
+    font-size: 36px;
     background-color: black;
+    padding-left: 100px;
+    padding-right: 50px;
+    display: grid;
+    grid-template-areas: 
+    'h1' 'text';
+    grid-template-rows: 1fr 2fr;
+}
+
+#ar2 {
+    grid-area: ar;
+    color: white;
+    font-size: 36px;
+    background-color: black;
+    padding-left: 250px;
+    padding-right: 250px;
+    display: grid;
+    grid-template-areas: 
+    'h1' 'text';
+    grid-template-rows: 1fr 2fr;
+}
+
+#ar3 {
+    grid-area: ar;
+
+}
+header {
+    grid-area: hd;
+    background-color: lightgrey;
+    border-radius: 10px;
+}
+
+nav {
+    grid-area: nav;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    flex-direction: row;
+    align-items: center;
+    font-size: 48px;
+    width: 100%;
+    background-color: black;
+    margin: 0;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.class:hover {
+    background-color: white ;
+}
+
+aside {
+    display: flexbox;
+    justify-content: center;
+    text-align: center;
+    grid-area: as;
+    display: grid;
+    grid-template-areas: 
+    'h1' 'text';
+    grid-template-rows: 1fr 2fr;
+}
+
+footer {
+    grid-area: ft;
+    border-radius: 10px;
+}
+
+h1 {
+    font-size: 96px;
+}
+
+h3 {
+    color: white;
+    font-size: 48px;
+}
+
+.text{
+    grid-area: text;
+}
+
+.h1-div {
+    grid-area: h1;
+}
+
+ol {
+    font-size: 48px ;
+    display: flexbox;
+    flex-wrap: wrap;
+    align-content: stretch;
 }
