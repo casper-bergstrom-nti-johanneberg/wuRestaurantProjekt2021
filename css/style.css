@@ -39,24 +39,32 @@ body{
     display: grid;
     height: 100vh;
     width: 100%;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 9fr;
     gap: 0px;
     grid-template-areas:
-    'nav'
-    'ar';
+    'nav nav'
+    'ar as';
     background-size: cover;
     background-color: black;
     opacity: 1;
     visibility: visible;
 }
 
-.bild{
-    grid-area: "picture";
-}
-
-.fill{
-    grid-area: "fill";
+.kontakt{
+    display: grid;
+    height: 100vh;
+    width: 100%;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 9fr;
+    gap: 0px;
+    grid-template-areas:
+    'nav'
+    'text';
+    background-size: cover;
+    background-color: black;
+    opacity: 1;
+    visibility: visible;
 }
 
 #ar1 {
@@ -85,7 +93,7 @@ body{
     grid-template-rows: 1fr 2fr;
 }
 
-#ar3 {
+#void {
     grid-area: ar;
 
 }
@@ -118,7 +126,6 @@ a {
 }
 
 aside {
-    display: flexbox;
     justify-content: center;
     text-align: center;
     grid-area: as;
@@ -142,8 +149,26 @@ h3 {
     font-size: 48px;
 }
 
-.text{
+.kontakt-text{
     grid-area: text;
+    padding: 150px;
+    font-size: 180px
+}
+
+h4 {
+    color: white;
+    font-size: 60px
+}
+
+.text{
+    font-size: 34px;
+    grid-area: text;
+    padding-left: 100px;
+}
+
+.bild{
+    grid-area: text;
+    padding-top: 25px;
 }
 
 .h1-div {
@@ -151,8 +176,6 @@ h3 {
 }
 
 ol {
-    font-size: 48px ;
-    display: flexbox;
-    flex-wrap: wrap;
+    font-size: 48px;
     align-content: stretch;
 }
